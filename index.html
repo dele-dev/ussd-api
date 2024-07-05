@@ -1,0 +1,73 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<title>PAY - CITSA</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="./assets/css/bootstrap.css" rel="stylesheet">
+		<link href="./assets/css/style.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row image-cover">
+				<img src="./assets/img/1.jpg" alt="Banner"/>
+			</div>
+			<div class="row">
+				<h1>CITSA DUES PAYMENT</h1>
+				<a href="ussd_view.php">Switch to USSD</a>
+				<span id="error_span"></span>
+				<form action="" method="post" id="form_pay">
+					<div class="form-group">
+						<lable for="fullname">Full name</label>
+						<input class="form-control" type="text" name="fullname" placeholder="Eg: Evia Abdul Ebuka" required />
+					</div>
+					<div class="form-group">
+						<lable for="email">Email</label>
+						<input class="form-control" type="email" name="email" placeholder="Eg: AbdulEbuka@icloud" required />
+					</div>
+					<div class="form-group">
+						<lable for="department">Department</label>
+						<select class="form-control" name="department" required >
+							<option value="">Department</option>
+							<option value="ict">ICT</option>
+							<option value="csc">CSC</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<lable for="level">Level</label>
+						<select class="form-control" name="level" required>
+							<option value="">Level</option>
+							<option >100</option>
+							<option >200</option>
+							<option >300</option>
+							<option >400</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<lable for="due">Due</label>
+						<input class="form-control" type="number" name="due" placeholder="Dues Payement..."  required/>
+					</div>
+					<div class="form-group">
+						<lable for="payment">Payment Method</label>
+						<select class="form-control" name="payment" required >
+							<option >USSD</option>
+							<option >MOBILE MONIE</option>
+							<option >BANK</option>
+						</select>
+					</div>
+					<div class="form-group ">
+						<button type="reset" class="btn btn-default">Reset</button>
+						<button type="submit"  class="btn btn-success" id="paymentbutton">Make Payment</button>
+					</div>
+				</form>
+			</div>
+			<div class="row footer-class">
+				<h4>Designed by <span><a href="#">CITSA TEAM</a></span>, <br/> Powered by <span><a href="#">INTERPAY TEAM</a></span></h4>
+			</div>
+		</div>
+
+
+	<!--- custome JS --->
+	<script type="module" src="./assets/js/App.js"></script>
+	</body>
+</html>

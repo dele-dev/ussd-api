@@ -1,0 +1,55 @@
+form{
+	margin: 10px;
+}
+
+.form-group{
+    padding: 10px;
+}
+
+h1{
+    margin: 20px 30px;
+    font-family: none;
+    font-weight: bold;
+}
+
+span a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-class{
+    padding: 80px 30px;
+}
+
+.image-cover{
+    margin-bottom: 40px;
+}
+
+#error_span{
+	color:red;
+	padding:20px;
+}
+
+#form_pay {
+    width: 430px;
+    margin: auto;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 1px grey;
+}
+
+#screentype {
+    border: 2px solid;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+#displayValue{
+    border: none;
+}
+
+
+.phonecase{
+    padding: 20px 40px !important;
+}

@@ -1,0 +1,223 @@
+
+
+
+function ussdImplementInit ($text,$decoded) {
+      $response = array();
+
+    switch($text){
+        case "*789*123*000#": 
+             // User is starting a new session
+             array_push($response,"WELCOME TO CITSA.  ");
+             array_push($response,"1. Pay Due");
+             array_push($response,"2. Check Last 2 transactions ");
+             array_push($response,"3. Exit");
+                 responses($response);
+                //echo json_encode($decoded);
+               break;
+     }
+ 
+ //  echo json_encode($decoded);
+}
+
+
+
+
+
+
+// function ussdImplementFirstStep ($text,$decoded) {
+//       $response = array();
+
+//     switch($text){
+//         case "1": 
+//              // User is starting a new session
+//              array_push($response, "WELCOME TO CITSA. ");
+//                    array_push($response,"1. Pay for One semester dues  " ) ;
+//                    array_push($response,"2. Pay for Two semesters dues  " ) ;
+//                    array_push($response,"3. Pay for Three semesters dues  " ) ;
+//                    array_push($response,"4. Pay for Four semesters dues  " ) ;
+//                    array_push($response,"5. Pay for Six semesters dues  " ) ;
+//                    array_push($response,"6. Pay for Eight semesters dues  " ) ;
+//                    array_push($response,"7. Exit");
+//                  responses($response);
+//                 //echo json_encode($decoded);
+//                break;
+//         case "2": 
+//              // User is starting a new session
+//                   array_push($response,"WELCOME TO CITSA.  " ) ;
+//                    array_push($response,"100ghc first semester " ) ;
+//                    array_push($response,"200ghc two semester payment  " ) ;
+//                    array_push($response,"0. Exit");
+//                  responses($response);
+//                 //echo json_encode($decoded);
+//                break;
+//         case "3": 
+//              // User is starting a new session
+//                   session_destroy();
+//                   array_push($response,"THANK YOU FOR USING CITSA-USSD!!. " ) ;
+//                  responses($response);
+//                 //echo json_encode($decoded);
+//                break;
+//      }
+ 
+//  //  echo json_encode($decoded);
+// }
+
+// function ussdImplementSecondStep ($text,$decoded) {
+//      $response = array();
+
+//     switch($text){
+//         case "1": 
+//              // User is starting a new session
+//                   array_push($response,"WELCOME TO CITSA.  " ) ;
+//                    array_push($response,"Pay for One semester dues for 10ghc  " ) ;
+//                    array_push($response,"1. Airtime  " ) ;
+//                    array_push($response,"2. Momo  " ) ;
+//                    array_push($response,"3. Back");
+//                  responses($response);
+//                 //echo json_encode($decoded);
+//                break;
+//         case "2": 
+//              // User is starting a new session
+//                 array_push($response,"WELCOME TO CITSA.  " ) ;
+//                 array_push($response,"Pay for Two semesters dues for 20ghc  " ) ;
+//                 array_push($response,"1. Airtime  " ) ;
+//                 array_push($response,"2. Momo  " ) ;
+//                 array_push($response,"3. Back");
+//                  responses($response);
+//                 //echo json_encode($decoded);
+//                break;
+//         case "3": 
+//              // User is starting a new session
+//                 array_push($response,"WELCOME TO CITSA.  " ) ;
+//                 array_push($response,"Pay for Three semesters dues for 30ghc  " ) ;
+//                 array_push($response,"1. Airtime  " ) ;
+//                 array_push($response,"2. Momo  " ) ;
+//                 array_push($response,"3. Back");
+//                  responses($response);
+//                 //echo json_encode($decoded);
+//                break;
+//         case "4": 
+//              // User is starting a new session
+//                 array_push($response,"WELCOME TO CITSA.  " ) ;
+//                 array_push($response,"Pay for Four semesters dues for 40ghc  " ) ;
+//                 array_push($response,"1. Airtime  " ) ;
+//                 array_push($response,"2. Momo  " ) ;
+//                 array_push($response,"3. Back");
+//                  responses($response);
+//                 //echo json_encode($decoded);
+//                break;
+//         case "5": 
+//              // User is starting a new session
+//                 array_push($response,"WELCOME TO CITSA.  " ) ;
+//                 array_push($response,"Pay for Six semesters dues for 60ghc  " ) ;
+//                 array_push($response,"1. Airtime  " ) ;
+//                 array_push($response,"2. Momo  " ) ;
+//                 array_push($response,"3. Back");
+//                  responses($response);
+//                 //echo json_encode($decoded);
+//                break;
+//         case "6": 
+//              // User is starting a new session
+//                 array_push($response,"WELCOME TO CITSA.  " ) ;
+//                 array_push($response,"Pay for Eight semesters dues for 80ghc  " ) ;
+//                 array_push($response,"1. Airtime  " ) ;
+//                 array_push($response,"2. Momo  " ) ;
+//                 array_push($response,"3. Back");
+//                  responses($response);
+//                 //echo json_encode($decoded);
+//                break;
+//         case "7": 
+//              // User is starting a new session
+//                   session_destroy();
+//                   array_push($response,"THANK YOU FOR USING CITSA-USSD!!.  " ) ;
+//                  responses($response);
+//                 //echo json_encode($decoded);
+//                break;
+//         case "0": 
+//              // User is starting a new session
+//                   session_destroy();
+//                   array_push($response,"THANK YOU FOR USING CITSA-USSD!!.  " ) ;
+//                  responses($response);
+//                 //echo json_encode($decoded);
+//                break;
+//      }
+ 
+//  //  echo json_encode($decoded);
+// }
+// function ussdImplementThirdStep ($text,$decoded) {
+//      $response = array();
+
+//     switch($text){
+//         case "1": 
+//              // User is starting a new session
+//                  array_push($response,"WELCOME TO CITSA.  " ) ;
+//                    array_push($response,"Dues payment made via Airtime... " ) ;
+//                    array_push($response,"0. exit");
+//                  responses($response);
+//                 //echo json_encode($decoded);
+//                break;
+//         case "2": 
+//              // User is starting a new session
+//                array_push($response,"WELCOME TO CITSA.  " ) ;
+//                 array_push($response,"Input password to make Payment for dues  " ) ;
+//                  responses($response);
+//                 //echo json_encode($decoded);
+//                break;
+//         case "3": 
+//              // User is starting a new session
+//                array_push($response,"WELCOME TO CITSA.  " ) ;
+//                 array_push($response,"1. Pay for One semester dues \n  ");
+//                 array_push($response,"2. Pay for Two semesters dues  " ) ;
+//                 array_push($response,"3. Pay for Three semesters dues  " ) ;
+//                 array_push($response,"4. Pay for Four semesters dues  " ) ;
+//                 array_push($response,"5. Pay for Six semesters dues  " ) ;
+//                 array_push($response,"6. Pay for Eight semesters dues  " ) ;
+//                 array_push($response,"7. Exit");
+//                  responses($response);
+//                 //echo json_encode($decoded);
+//                break;
+//         case "0": 
+//              // User is starting a new session
+//                   array_push($response,"THANK YOU FOR USING CITSA-USSD!!. " ) ;
+//                  responses($response);
+//                 //echo json_encode($decoded);
+//                break;
+//      }
+ 
+//  //  echo json_encode($decoded);
+// }
+
+
+// }
+// else if ($processType == "reply"){
+//     ussdImplementFirstStep($text,$decoded);
+// }
+// else if ($processType == "reply_next"){
+//     ussdImplementSecondStep($text,$decoded);
+// }
+// else if ($processType == "reply_next_response"){
+//     ussdImplementThirdStep($text,$decoded);
+// }
+
+// // if($text == "*789*123*000#") {
+
+
+// //         //using db previous step to track user steps 
+// //   /* $sql = "UPDATE users SET previous_step ='welcome' WHERE phone_number='".$number."'";
+// //     $result = mysqli_query($conn, $sql);
+// //     if (!$result) {
+// //         error_log("Failed to execute SQL query: " . mysqli_error($conn));
+// //        array_push($response,"Sorry, an error occurred while processing your request.";
+// //         header('Content-type: text/plain');
+// //         echo $response;
+// //         exit;
+// //     } */
+
+// //     header('Content-type: text/plain');
+// //     $response = [
+// //         "Type" => "Response",
+// //         "Message" => $response
+// //     ];
+// //     exit(json_encode($response));
+
+// // }
