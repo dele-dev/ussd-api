@@ -116,7 +116,7 @@ if(isset($_SESSION["sessionId"]) && isset($_SESSION["counter"])){
     
     try{
 
-        if(time() - $_SESSION["timer"] > 200){
+        if(time() - $_SESSION["timer"] > 100){
             responses ("Session Time out!");
             session_destroy();
         }else{
